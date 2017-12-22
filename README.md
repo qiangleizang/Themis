@@ -62,7 +62,7 @@ Themis，是宜信公司DBA团队开发的一款数据库审核产品。可帮�
 
 配置settings.py文件包括oracle、mysql、redis、mongo、pt-query-digest存储数据的帐号密码
 
-配置mongo
+配置mongo-这里没有启用root验证方式登录mongodb的，所以用户名和密码不用输
     
     MONGO_SERVER = "127.0.0.1"
     MONGO_PORT = 27017
