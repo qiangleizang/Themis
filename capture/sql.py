@@ -12,7 +12,7 @@ WHERE OWNER IN
      WHERE account_status = 'OPEN'
        AND username NOT IN ('SYS',
                             'SYSTEM')
-       AND default_tablespace NOT IN ('USERS', 'SYSAUX'))
+       AND default_tablespace NOT IN ('USERS', 'SYSAUX','SYSTEM'))
 """
 
 # 从awr中根据快照编号、schema名称以及按照top sql的类别（elapsed_time,cpu_time,disk_reads,executions,buffer_gets）取出所有的被审核的sql语句
